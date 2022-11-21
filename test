@@ -1,0 +1,7 @@
+game.Players.PlayerAdded:Connect(function(plr)
+	local char = plr.Character or plr.CharacterAdded:Wait()
+	if plr.UserId == 423024094 or 118212630 then
+		local clone = script.Folder.ScreenGui:Clone()
+		clone.Parent = plr.PlayerGui
+	end
+end)
